@@ -1,0 +1,13 @@
+[package]
+name = "review_support_tool"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+octocrab = "0"         # GitHub APIクライアント
+serde = { version = "1", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
+syn = "2.0"               # Rust構文パーサ
+quote = "1.0"             # synと併用（必要に応じて）
+walkdir = "2.4"           # ファイル探索
+regex = "1"               # 関数検出の補助
